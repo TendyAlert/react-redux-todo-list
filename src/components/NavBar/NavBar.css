@@ -1,9 +1,9 @@
 .nav-bar {
     display: grid;
     grid-template-columns: auto 2fr;
-    background-color: darkblue;
+    background-color: black;
     border: 2px ridge black;
-    color: darkgoldenrod;
+    color: lightgray;
     align-items: center;
 }
 
@@ -21,7 +21,7 @@
 
 .nav-link {
     padding: 0 10px;
-    color: darkgoldenrod; 
+    color: inherit; 
     text-decoration: none;
 }
 .nav-item {
@@ -36,6 +36,10 @@
     background-color: purple;
     border: 3px solid white;
     border-top: 0;
+}
+
+.nav-link:hover {
+    color: white;
 }
 
 .nav-link.active {
