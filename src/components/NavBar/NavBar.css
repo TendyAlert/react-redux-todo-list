@@ -1,0 +1,33 @@
+.nav-bar {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    background-color: darkblue;
+    border: 2px ridge black;
+    color: darkgoldenrod;
+    align-items: center;
+}
+
+.nav-bar-header {
+    width: 300px;
+}
+
+.nav-link-container {
+    display: flex;
+    justify-self: flex-end;
+    align-self: stretch;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 0 10px;
+    color: goldenrod; 
+    text-decoration: none;
+}
+.nav-link:visited, :hover {
+    color: darkgoldenrod;
+}
+
+.active {
+    border: 3px 3px 0 3px solid white;
+    background-color: blueviolet;
+}
