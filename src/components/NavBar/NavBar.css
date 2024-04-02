@@ -16,18 +16,28 @@
     justify-self: flex-end;
     align-self: stretch;
     align-items: center;
+    width: 225px;
 }
 
 .nav-link {
     padding: 0 10px;
-    color: goldenrod; 
+    color: darkgoldenrod; 
     text-decoration: none;
 }
-.nav-link:visited, :hover {
-    color: darkgoldenrod;
+.nav-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.active {
-    border: 3px 3px 0 3px solid white;
-    background-color: blueviolet;
+.nav-item:has(.nav-link.active) {
+    background-color: purple;
+    border: 3px solid white;
+    border-top: 0;
+}
+
+.nav-link.active {
+    color: white;
 }
