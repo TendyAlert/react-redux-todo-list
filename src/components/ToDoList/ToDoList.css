@@ -20,9 +20,16 @@
 }
 
 .todo-check-box {
-    cursor: pointer;
     display: flex;
     flex-direction: row;
+}
+
+.task-text {
+    user-select: none;
+    font-weight: 450;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
 }
 
 
@@ -38,6 +45,18 @@
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
+.delete-button {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.delete-button:hover {
+    color: red;
+}
+
 button[type="submit"] {
     margin-left: 2%;
     height: 34px;
@@ -49,26 +68,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-.delete-button {
-    margin-left: auto;
-    margin-right: 20px;
-    border: 2px solid black;
-    font-weight: 700px;
-    font-size: 24px;
-    border-radius: 50%;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 25px;
-}
-
-.delete-button:hover {
-    color: red;
-    border: 2px solid red;
-}
-
-button:hover {
+button[type="submit"]:hover {
     background-color: lightgray;
     color: blue;
 }

@@ -1,6 +1,11 @@
-import { ADD_TASK } from "./action_constants";
+import { ADD_TASK, DELETE_TASK } from "./action_constants";
 
 export const addTask = (payload) => ({
     type: ADD_TASK,
+    payload
+})
+
+export const deleteTask = (payload) => ({
+    type: DELETE_TASK,
     payload
 })
