@@ -20,7 +20,7 @@ export default function NewTask() {
     <div>
         <form action="#" onSubmit={handleSubmit}>
             <div className="formrow">
-                <input type="text" placeholder='Task...' className='new-task-box' ref={taskInput}/>
+                <input type="text" placeholder='Task...' className='new-task-box' ref={taskInput} required/>
                 <button type="submit">Add</button>
             </div>
         </form>

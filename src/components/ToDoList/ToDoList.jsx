@@ -14,7 +14,8 @@ export default function ToDoList() {
 
     const handleClick = (event) => {
         event.preventDefault();
-        const targetKey = event.taget.dataset.id;
+        const targetKey = event.target.dataset.id;
+        console.log(targetKey)
         dispatch(deleteTask(targetKey))
     }
 

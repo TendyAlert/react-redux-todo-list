@@ -12,6 +12,7 @@ export default function tasksReducer(state, action) {
             nextTaskId: state.nextTaskId + 1
         }
     } else if (action.type === DELETE_TASK) {
+        // eslint-disable-next-line
         const newTasks = state.tasks.filter(task => task.id != action.payload);
         return {
             tasks: newTasks,

@@ -6,7 +6,7 @@ import './NavBar.css'
 
 
 export default function NavBar() {
-  const [activeKey, setActiveKey] = useState('/');
+  const [activeKey, setActiveKey] = useState('/todo');
 
   const handleSelect = (selectedKey) => {
     setActiveKey(selectedKey)
@@ -19,7 +19,7 @@ export default function NavBar() {
       </div>
       <div className='nav-link-container'>
         <Nav.Item>
-          <Nav.Link as={NavLink} to="/" eventKey={"/"}>Todos</Nav.Link>
+          <Nav.Link as={NavLink} to="/todo" eventKey={"/todo"}>Todos</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={NavLink} to="/about" eventKey={"/about"}>About</Nav.Link>
