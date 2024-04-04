@@ -1,0 +1,11 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    margin: 10px 20% 0 20%;
+    padding: 1px 0 15px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: white;
+}

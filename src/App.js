@@ -17,9 +17,9 @@ function App() {
         <div>
           <Routes>
             <Route path='/todo/:targetTasks' Component={ToDoList}/>
-            <Route path='/todo' Component={ToDoList}/>
             <Route path='/about' Component={About}/>
             <Route path='/contact' Component={Contact}/>
+            <Route path='/todo' Component={ToDoList}/>
           </Routes>
         </div>
       </Router>
