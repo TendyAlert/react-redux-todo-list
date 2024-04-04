@@ -20,6 +20,7 @@ function App() {
             <Route path='/about' Component={About}/>
             <Route path='/contact' Component={Contact}/>
             <Route path='/todo' Component={ToDoList}/>
+            <Route path='/' Component={ToDoList}/>
           </Routes>
         </div>
       </Router>
