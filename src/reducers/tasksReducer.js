@@ -1,13 +1,13 @@
 import { ADD_TASK, DELETE_TASK, UPDATE_TASK } from "../actions/action_constants";
 
 
-const inititalState = {
-    tasks: [],
+const initialState = {
+    tasks: [], // Initialize tasks as an empty array
     taskState: 'incomplete',
     nextTaskId: 1
-  }
+};
 
-export default function tasksReducer(state = inititalState, action) {
+export default function tasksReducer(state = initialState, action) {
     if (action.type === ADD_TASK) {
         const newTask = {
             ...action.payload,
@@ -24,8 +24,8 @@ export default function tasksReducer(state = inititalState, action) {
         // eslint-disable-next-line
         const newTasks = state.tasks.filter(task => task.id != action.payload);
         return {
-            tasks: newTasks,
-            nextTaskId:state.nextTaskId
+            ...state,
+            tasks: newTasks
         }
     } else if (action.type === UPDATE_TASK) {
         const updatedTasks = state.tasks.map(task => {

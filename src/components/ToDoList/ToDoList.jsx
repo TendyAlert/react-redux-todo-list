@@ -9,7 +9,7 @@ import NewTask from '../NewTask/NewTask'
 import { deleteTask, updateTasks } from '../../actions/action_creators'
 
 export default function ToDoList() {
-    const tasks = useSelector(state => state.tasks);
+    const tasks = useSelector(state => state.tasks.tasks);
     const dispatch = useDispatch();
 
     const handleClick = (event) => {
@@ -25,8 +25,7 @@ export default function ToDoList() {
     const taskStatus = targetTasks ?? 'All'
 
     const taskList = tasks
-    .filter(task => (
-        String(task.taskState) === taskStatus || taskStatus === 'All'))
+    .filter(task => (String(task.taskState) === taskStatus || taskStatus === 'All'))
     .map(task => (
         <li className={`todo-item ${task.taskState === 'complete' ? 'completed' : ''}`}  key={task.id}>
             <div className='todo-check-box' htmlFor='taskCheckbox'>
