@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tendyalert.github.io/react-redux-todo-list/todo/static/css/main.aa11546b.css",
-    "main.js": "/tendyalert.github.io/react-redux-todo-list/todo/static/js/main.2ed782a1.js",
-    "static/js/453.870108e3.chunk.js": "/tendyalert.github.io/react-redux-todo-list/todo/static/js/453.870108e3.chunk.js",
-    "index.html": "/tendyalert.github.io/react-redux-todo-list/todo/index.html",
-    "main.aa11546b.css.map": "/tendyalert.github.io/react-redux-todo-list/todo/static/css/main.aa11546b.css.map",
-    "main.2ed782a1.js.map": "/tendyalert.github.io/react-redux-todo-list/todo/static/js/main.2ed782a1.js.map",
-    "453.870108e3.chunk.js.map": "/tendyalert.github.io/react-redux-todo-list/todo/static/js/453.870108e3.chunk.js.map"
+    "main.css": "/tendyalert.github.io/react-redux-todo-list/static/css/main.aa11546b.css",
+    "main.js": "/tendyalert.github.io/react-redux-todo-list/static/js/main.79939953.js",
+    "static/js/453.870108e3.chunk.js": "/tendyalert.github.io/react-redux-todo-list/static/js/453.870108e3.chunk.js",
+    "index.html": "/tendyalert.github.io/react-redux-todo-list/index.html",
+    "main.aa11546b.css.map": "/tendyalert.github.io/react-redux-todo-list/static/css/main.aa11546b.css.map",
+    "main.79939953.js.map": "/tendyalert.github.io/react-redux-todo-list/static/js/main.79939953.js.map",
+    "453.870108e3.chunk.js.map": "/tendyalert.github.io/react-redux-todo-list/static/js/453.870108e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa11546b.css",
-    "static/js/main.2ed782a1.js"
+    "static/js/main.79939953.js"
   ]
 }
