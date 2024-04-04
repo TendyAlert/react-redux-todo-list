@@ -1,15 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers } from "@reduxjs/toolkit";
 import tasksReducer from '../reducers/tasksReducer'
+import formReducer from "../reducers/formReducer";
 
 
-
-const inititalState = {
-  tasks: [],
-  taskState: 'incomplete',
-  nextTaskId: 1
-}
-
-const rootReducer = (state = inititalState, action) => tasksReducer(state, action);
+const rootReducer = combineReducers({
+  tasks: tasksReducer,
+  form: formReducer
+});
 
 
 const store = configureStore({ reducer: rootReducer });

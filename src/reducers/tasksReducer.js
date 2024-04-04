@@ -1,7 +1,13 @@
 import { ADD_TASK, DELETE_TASK, UPDATE_TASK } from "../actions/action_constants";
 
 
-export default function tasksReducer(state, action) {
+const inititalState = {
+    tasks: [],
+    taskState: 'incomplete',
+    nextTaskId: 1
+  }
+
+export default function tasksReducer(state = inititalState, action) {
     if (action.type === ADD_TASK) {
         const newTask = {
             ...action.payload,
