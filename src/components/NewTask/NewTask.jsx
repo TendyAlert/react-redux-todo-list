@@ -10,7 +10,8 @@ export default function NewTask() {
         event.preventDefault();
 
         dispatch(addTask({
-            newTask: taskInput.current.value
+            newTask: taskInput.current.value,
+            taskState: 'incomplete'
         }))
 
         taskInput.current.value = ''
@@ -19,7 +20,7 @@ export default function NewTask() {
   return (
     <div>
         <form action="#" onSubmit={handleSubmit}>
-            <div className="formrow">
+            <div className="formrow new-task-form">
                 <input type="text" placeholder='Task...' className='new-task-box' ref={taskInput} required/>
                 <button type="submit">Add</button>
             </div>

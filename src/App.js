@@ -16,6 +16,7 @@ function App() {
         <div className='empty-div'></div>
         <div>
           <Routes>
+            <Route path='/todo/:targetTasks' Component={ToDoList}/>
             <Route path='/todo' Component={ToDoList}/>
             <Route path='/about' Component={About}/>
             <Route path='/contact' Component={Contact}/>

@@ -5,6 +5,7 @@ import tasksReducer from '../reducers/tasksReducer'
 
 const inititalState = {
   tasks: [],
+  taskState: 'incomplete',
   nextTaskId: 1
 }
 

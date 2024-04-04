@@ -24,6 +24,7 @@
     flex-direction: row;
 }
 
+
 .task-text {
     user-select: none;
     font-weight: 450;
@@ -32,6 +33,9 @@
     width: 80%;
 }
 
+.completed {
+    text-decoration: line-through;
+}
 
 .todo-check-box input[type="checkbox"] {
     cursor: pointer;
@@ -58,7 +62,7 @@
     color: red;
 }
 
-button[type="submit"] {
+.new-task-form button[type="submit"] {
     margin-left: 2%;
     height: 34px;
     width: 12%;
@@ -69,7 +73,33 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.new-task-form button[type="submit"]:hover {
     background-color: lightgray;
     color: blue;
+    border: 1px solid blue;
+}
+
+.todo-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.todo-link {
+    margin: 2%;
+    width: 100px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+.todo-link:hover {
+    background-color: lightgrey;
+    color: blue;
+    border: 1px solid blue;
 }
